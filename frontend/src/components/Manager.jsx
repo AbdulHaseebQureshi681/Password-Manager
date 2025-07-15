@@ -231,7 +231,7 @@ const Manager = () => {
                             passwordArray.map((item, index) => (
                                 <tr className='tblr' key={index}>
 
-                                    <td><a href={item.website} target="_blank" rel="noopener noreferrer">{item.website}</a> <i onClick={() => copyText(item.website)} className="fa-solid fa-copy"></i></td>
+                                    <td><a href={item.website} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>{item.website}</a> <i onClick={() => copyText(item.website)} className="fa-solid fa-copy"></i></td>
                                     <td>{item.username} <i onClick={() => copyText(item.username)} className="fa-solid fa-copy"></i></td>
                                     <td>{item.password} <i onClick={() => copyText(item.password)} className="fa-solid fa-copy"></i></td>
                                     <td ><span>
