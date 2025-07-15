@@ -233,7 +233,7 @@ const Manager = () => {
 
                                     <td><a href={item.website} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>{item.website}</a> <i onClick={() => copyText(item.website)} className="fa-solid fa-copy"></i></td>
                                     <td>{item.username} <i onClick={() => copyText(item.username)} className="fa-solid fa-copy"></i></td>
-                                    <td>{item.password} <i onClick={() => copyText(item.password)} className="fa-solid fa-copy"></i></td>
+                                    <td>{"*".repeat(item.password.length)} <i onClick={() => copyText(item.password)} className="fa-solid fa-copy"></i></td>
                                     <td ><span>
                                         <i onClick={()=>onEdit(item.id)}  className="fa-solid fa-pen-to-square"></i></span>
                                         <span className='trash'>
