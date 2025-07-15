@@ -9,7 +9,7 @@ const app = express()
 const port = 3000
 app.use(cors())
 app.use(bodyParser.json());
-mongoose.connect('mongodb://127.0.0.1:27017/Passwords')
+mongoose.connect('mongodb+srv://abluseeb:htc8x16gb@cluster0.4bqlpky.mongodb.net/Passwords')
   .then(() => console.log('Connected!'));
 app.get('/', async (req, res) => {
   const findresult = await Pass.find({});
